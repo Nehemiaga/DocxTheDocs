@@ -1,0 +1,11 @@
+[package]
+name = "docxthedocs-cfb"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+cfb.workspace = true
+docxthedocs-ir = { path = "../docxthedocs-ir" }
+thiserror.workspace = true
