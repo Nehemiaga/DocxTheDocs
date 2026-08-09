@@ -1,0 +1,29 @@
+[package]
+name = "docxthedocs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+name = "docxthedocs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "docxthedocs"
+path = "src/main.rs"
+
+[dependencies]
+clap.workspace = true
+docxthedocs-cfb = { path = "../docxthedocs-cfb" }
+docxthedocs-doc = { path = "../docxthedocs-doc" }
+docxthedocs-ir = { path = "../docxthedocs-ir" }
+docxthedocs-ooxml = { path = "../docxthedocs-ooxml" }
+docxthedocs-validate = { path = "../docxthedocs-validate" }
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+cfb.workspace = true
+zip.workspace = true
