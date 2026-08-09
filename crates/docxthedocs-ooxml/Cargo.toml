@@ -1,0 +1,12 @@
+[package]
+name = "docxthedocs-ooxml"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+docxthedocs-ir = { path = "../docxthedocs-ir" }
+quick-xml.workspace = true
+thiserror.workspace = true
+zip.workspace = true
